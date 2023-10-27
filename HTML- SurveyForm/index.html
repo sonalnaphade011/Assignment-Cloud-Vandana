@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Survey Form</h2>
+        <form id="survey-form">
+          <div class="Box"> <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="First name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Last name" required>
+        </div> 
+           <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" required style="font-size: 14px;">
+            <br><br>
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="India">India</option>
+                <option  value="Italy">Italy</option>
+                <option value="Germany">Germany</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="Other">Other</option>
+            </select>
+          
+            <label>Gender:</label>
+            <input type="checkbox" id="male" class="gender-input" name="gender" value="Male">
+            <label for="male" class="gender-label">Male</label>
+            <input type="checkbox" id="female" class="gender-input" name="gender" value="Female">
+            <label for="female" class="gender-label">Female</label>
+            <br><br>
+            <div class="Box"> 
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" placeholder="Profession" required>
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required>
+            </div>
+           
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" placeholder="+91" required style="font-size: 14px;">
+            <br><br>
+        <div class="date"></div>
+            <button type="submit" id="submit" style="font-size: 14px; ">Submit</button>
+            <button type="reset" id="reset" style="font-size: 14px;">Reset</button></div>
+        </form>
+    </div>
+
+    <!-- Popup to display submitted values -->
+    <div id="popup">
+        <div class="popup-content">
+            <span id="popup-close">X</span>
+            <h2>Submitted Data</h2><br>
+            <p><strong>First Name:</strong> <span id="popup-first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="popup-last-name"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="popup-date-of-birth"></span></p>
+            <p><strong>Country:</strong> <span id="popup-country"></span></p>
+            <p><strong>Gender:</strong> <span id="popup-gender"></span></p>
+            <p><strong>Profession:</strong> <span id="popup-profession"></span></p>
+            <p><strong>Email:</strong> <span id="popup-email"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="popup-mobile"></span></p>
+        </div>
+    </div>
+    <footer>
+      <div class="footer-btm">
+        <div> Copyrights&#169; 2023 Survey form. All Rights Reserved | Design by Sonal</div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
